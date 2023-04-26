@@ -43,10 +43,11 @@ body {
   padding-left: 20px;
 }
   
-input {
+form_idea {
   display: inline-block;
-  margin: 0;
+  margin: 13px;
   text-align: center;
+  position: left;
 }
   
 input[type=text] {
@@ -87,27 +88,16 @@ input[type=submit] {
 </div>
 
  <div> 
-<form> 
-  <label for="idea">Your idea:</label> 
-  <input type="text" id="idea" name="idea" placeholder="Goof">
+<form id="form_idea">
+
+  <label for="idea">Your idea:</label><br> 
+  <input type="text" id="idea" name="idea" placeholder="Goof"><br>
+  <input type="reset" id="reset" name="reset">
+  <input type="submit" id="submit" name="submit">
   </div> 
   
-  <br>
-   
-   <div>
-     <input type="reset">
-   </div>
-   
-   <br>
-   
-   <div>
-     <input type="submit">
-   </div>   
-   
-   
-   
-   
-  </form> 
+</form> 
 
 </body>
 </html>
+
