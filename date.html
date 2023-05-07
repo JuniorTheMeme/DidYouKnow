@@ -38,10 +38,6 @@ body{
     font-size: 100px;
 }
 
-
-
-
-
 </style>
 <script>
 var date = new Date();
@@ -58,6 +54,14 @@ function printDate(){
     todaydate.innerHTML = day + "/" + month + "/" + year;
 }
 printDate();
+
+function printDay(){
+    var date = new Date();
+    var today = date.getDay();
+    var day = noofday[today];
+    todayday.innerHTML = day;
+}
+printDay();
 
 </script>
 </body>
