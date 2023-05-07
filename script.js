@@ -4,7 +4,6 @@ const todayday = document.querySelector('.day');
 const todaytime = document.querySelector('.time');
 const noofday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
 
-
 function printDate(){
     var date = new Date();
     var day = date.getDate();
