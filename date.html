@@ -86,7 +86,7 @@ function printTime(){
     if(sec < 10){
 	sec = "0" + sec;
     }
-    var time = hour + ":" + min + ":" + sec + ":" + " " + period;
+    var time = hour + ":" + min + ":" + sec + " " + period;
     document.querySelector(".time").innerHTML = time;
     setTimeout(printTime,1000);
 }
