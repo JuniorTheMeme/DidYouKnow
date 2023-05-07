@@ -1,19 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day - Date - Time</title>
-    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <div class="container">
+ <div class="container">
 	<div class="date">Hi</div>
         <div class="day">Hi</div>
         <div class="time">Hi</div>
     </div>
-	
-	
-    <script src="script.js"></script>
+
+<style>
+*{
+    margin: 0;
+}
+body{
+     background-color: #CCCCFF;
+     height: 100vh; 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 70px;
+     font-weight: bold;
+     font-family: sans-serif;
+     text-shadow: 1px 1px 3px rgba(0,0,0.5);
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.day{
+    margin: 0 70px;
+    color: rgba(177,5,28);
+    font-size: 100px;
+}
+
+
+
+
+
+</style>
+<script>
+var date = new Date();
+const todaydate = document.querySelector('.date');
+const todayday = document.querySelector('.day');
+const todaytime = document.querySelector('.time');
+const noofday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+function printDate(){
+    var date = new Date();
+    var day = date.getDate();
+    var month = date.getMonth()+1;
+    var year = date.getFullYear();
+    todaydate.innerHTML = day + "/" + month + "/" + year;
+}
+printDate();
+
+</script>
 </body>
-</html>
+</html> 
