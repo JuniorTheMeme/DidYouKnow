@@ -11,3 +11,4 @@ function printDate(){
     var year = date.getFullYear();
     todaydate.innerHTML = day + "/" + month + "/" + year;
 }
+printDate();
